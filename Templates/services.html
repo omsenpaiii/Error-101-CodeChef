@@ -1,10 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .service-card {
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .service-icon {
+      flex: 0 0 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+    
+    .service-content {
+      margin-left: 20px;
+    }
+    
+    .service-title {
+      font-size: 24px;
+      margin: 0;
+    }
+    
+    .service-description {
+      font-size: 16px;
+      color: #666;
+      margin: 10px 0;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>This is the Services Page</h1>
+  <header>
+    <h1>Our Services</h1>
+  </header>
+
+  <div class="container">
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <div class="service-content">
+        <h2 class="service-title">Web Development</h2>
+        <p class="service-description">We specialize in creating modern and responsive websites tailored to your needs.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-mobile-alt"></i>
+      </div>
+      <div class="service-content">
+        <h2 class="service-title">Mobile App Development</h2>
+        <p class="service-description">We build native and cross-platform mobile apps to enhance your digital presence.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-paint-brush"></i>
+      </div>
+      <div class="service-content">
+        <h2 class="service-title">UI/UX Design</h2>
+        <p class="service-description">Our talented designers create engaging and user-friendly interfaces for your products.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-cogs"></i>
+      </div>
+      <div class="service-content">
+        <h2 class="service-title">Custom Solutions</h2>
+        <p class="service-description">We provide tailored solutions to address specific challenges and meet your unique requirements.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
